@@ -1,0 +1,18 @@
+.popup {
+  background-color: white;
+  width: fit-content;
+  padding: 2rem;
+  border-radius: 1rem;
+  animation: itemScale 0.4s ease-out forwards;
+}
+
+@keyframes itemScale {
+  0% {
+    transform: scale(0.7);
+    opacity: 0;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}

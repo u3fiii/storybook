@@ -1,14 +1,93 @@
 .popup {
-  background-color: white;
+  background-color: #121212;
   width: fit-content;
-  padding: 2rem;
+  padding: 1rem;
   border-radius: 1rem;
-  animation: itemScale 0.4s ease-out forwards;
+  animation: itemScale 0.3s ease-out forwards;
+  font-family: "Nunito Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  color: #d5d8d7;
+  width: 340px;
+  .popup-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    padding: 1rem 0;
+    gap: 1rem;
+    .close-btn {
+      position: absolute;
+      top: 0.5rem;
+      left: 0.5rem;
+    }
+    .top-icon {
+      img {
+        width: 50px;
+        height: 64px;
+      }
+    }
+    .title-description {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 0.5rem;
+      .title {
+        font-size: 1rem;
+        font-weight: bold;
+        color: #fafefd;
+      }
+      .description {
+        width: 100%;
+        text-align: center;
+        font-size: 0.8rem;
+        font-weight: regular;
+        color: #d5d8d7;
+      }
+    }
+    .artwork-container--with-artwork {
+      display: block;
+      img {
+        width: 100%;
+      }
+    }
+    .artwork-container--without-artwork {
+      display: none;
+    }
+    .button-container {
+      display: flex;
+      flex-direction: row-reverse;
+      gap: 1rem;
+      justify-content: space-between;
+      align-items: center;
+      width: 100%;
+      .btn {
+        border: 1px solid red;
+        flex: 1;
+        text-align: center;
+        padding: 0.6rem;
+        border-radius: 0.5rem;
+        cursor: pointer;
+      }
+      .primary-btn {
+        background-color: #00d890;
+        border: 1px solid transparent;
+        color: black;
+      }
+      .secondary-btn {
+        background-color: transparent;
+        border: 1px solid #9ea09f;
+      }
+    }
+    .button-container.one-button {
+      .secondary-btn {
+        display: none;
+      }
+    }
+  }
 }
 
 @keyframes itemScale {
   0% {
-    transform: scale(0.7);
+    transform: scale(0.8);
     opacity: 0;
   }
   100% {

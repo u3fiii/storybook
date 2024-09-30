@@ -9,9 +9,12 @@
     "lint": "eslint .",
     "preview": "vite preview",
     "storybook": "storybook dev -p 6006",
-    "build-storybook": "storybook build"
+    "build-storybook": "storybook build",
+    "deploy-storybook": "storybook-to-ghpages",
+    "chromatic": "npx chromatic --project-token=chpt_a318ea47cac4647"
   },
   "dependencies": {
+    "@storybook/addon-docs": "^8.3.4",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
     "sass": "^1.79.4"
@@ -19,17 +22,19 @@
   "devDependencies": {
     "@chromatic-com/storybook": "^1.9.0",
     "@eslint/js": "^9.9.0",
-    "@storybook/addon-essentials": "^8.4.0-alpha.2",
+    "@storybook/addon-essentials": "^8.3.4",
     "@storybook/addon-interactions": "^8.4.0-alpha.2",
     "@storybook/addon-links": "^8.4.0-alpha.2",
     "@storybook/addon-onboarding": "^8.4.0-alpha.2",
     "@storybook/blocks": "^8.4.0-alpha.2",
-    "@storybook/react": "^8.4.0-alpha.2",
+    "@storybook/react": "^8.3.4",
     "@storybook/react-vite": "^8.4.0-alpha.2",
+    "@storybook/storybook-deployer": "^2.8.16",
     "@storybook/test": "^8.4.0-alpha.2",
     "@types/react": "^18.3.3",
     "@types/react-dom": "^18.3.0",
     "@vitejs/plugin-react": "^4.3.1",
+    "chromatic": "^11.10.4",
     "eslint": "^9.9.0",
     "eslint-plugin-react-hooks": "^5.1.0-rc.0",
     "eslint-plugin-react-refresh": "^0.4.9",
